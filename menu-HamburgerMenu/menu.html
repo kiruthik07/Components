@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Button</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="mainMenu" onclick="menubar1()">
+        <div class="menu " id="m1"></div>
+        <div class="menu " id="m2"></div>
+        <div class="menu " id="m3"></div>
+    </div>
+
+    <script>
+        function menubar1(){
+            document.getElementById("m1").classList.toggle("menu1");
+            document.getElementById("m2").classList.toggle("menu2");
+            document.getElementById("m3").classList.toggle("menu3");
+        }
+    </script>
+</body>
+</html>

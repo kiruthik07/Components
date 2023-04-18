@@ -1,0 +1,28 @@
+body {
+    background-color: #191414;
+    display: grid;
+    place-items: center;
+}
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: conic-gradient(#0e2e1a, #10dd58);
+    display: grid;
+    place-items: center;
+    animation: spinner 2s infinite linear ;
+}
+.inner {
+    height: 80px;
+    width: 80px;
+    background-color: #191414;
+    border-radius: 50%;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

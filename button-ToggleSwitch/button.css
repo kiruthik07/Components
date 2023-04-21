@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(24, 24, 24);
+}
+.store {
+    display: grid;
+    place-items: center;
+}
+h1 {
+    font-family: 'Heebo', sans-serif;
+    color: #DD6E13;
+}
+#text2{
+    margin-top: -.5em;
+}
+.nightText {
+    color: #226AF0;
+}
+.containerDay {
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(to right,#DD6E13,#E0CC11);
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 3em;
+}
+.containerNight {
+    background-image: linear-gradient(to right,#226AF0,#0D0668);
+}
+.animation {
+    animation: modeReturn .6s forwards;
+}
+.dayMode {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+.nightMode {
+    position: absolute;
+    left: 51px;
+    animation: mode .6s  forwards;
+}
+@keyframes mode {
+    0% {
+        position: absolute;
+        top: 3px;
+        left: 4px;
+    }
+    100% {
+        position: absolute;
+        left: 51px;
+    }
+}
+@keyframes modeReturn {
+    0% {
+        position: absolute;
+        left: 51px;
+    }
+    100% {
+        
+        position: absolute;
+        top: 3px;
+        left: 4px;
+    }
+}
+
+
+
+
+
+
+
+/* 
+.containerDay {
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(to right, #DD6E13,#E0CC11);
+    border-radius: 30px;
+    position: relative;
+}
+.containerNight {
+    background-image: linear-gradient(to right,  #226AF0, #0D0668);
+}
+.dayMode {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+.animation {
+    animation: modeReturn .6s forwards;
+}
+.nightMode {
+    position: absolute;
+    left: 51px;
+    animation: mode .6s  forwards;
+}
+
+@keyframes mode {
+    0% {
+        position: absolute;
+        top: 3px;
+        left: 4px;
+    }
+    100% {
+        position: absolute;
+        left: 51px;
+    }
+}
+
+@keyframes modeReturn {
+    0% {
+        position: absolute;
+        left: 51px;
+    }
+    100% {
+        
+        position: absolute;
+        top: 3px;
+        left: 4px;
+    }
+}  */

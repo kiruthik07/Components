@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva Card Hover</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="outer" onmouseover="visible()" onmouseleave="hide()">
+        <div class="inner" onmouseover="visible()" onmouseleave="hide()">
+            <img src="images/bgImage.jpg" alt="" width="200px"   id="bgImage" class="" >
+            <h1 id="head1" class="hide" >Create blank</h1>
+            <img src="images/search.png" alt="" width="10%"   id="search" class="hide">
+        </div>
+        <h3>Instagram Post (Square)</h3>
+        <p id="para" class="hide">1080<img src="images/cross.png" alt="" width="10px" class="cross">1080 px <img src="images/info.png" class="info" alt="" width="10%"></p>
+    </div>
+
+    <script>
+        function visible() {
+            document.getElementById("bgImage").classList.add("bgImageHover")
+            document.getElementById("head1").classList.remove("hide");
+            document.getElementById("search").classList.remove("hide");
+            document.getElementById("para").classList.remove("hide");
+        }
+        function hide() {
+            document.getElementById("bgImage").classList.remove("bgImageHover")
+            document.getElementById("head1").classList.add("hide");
+            document.getElementById("search").classList.add("hide");
+            document.getElementById("para").classList.add("hide");
+        }
+
+    </script>
+</body>
+</html>

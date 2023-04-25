@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+#container {
+    width: 170px;
+    height: 80px;
+    background-color:  rgb(32, 32, 32);
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family:Verdana, Tahoma, sans-serif;
+    letter-spacing: .5px;
+}
+.container1, .container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.containerHide {
+    display: none;
+}
+
+.container1 img,.container2 img {
+    width: 15%;
+}
+
+.button {
+    width: 22px;
+    height: 22px;
+    border: 1.7px solid white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 95px;
+    left: 150px;
+}
+
+.line1, .line2 {
+    height: 1px;
+    width: 16px;
+    background-color: white;
+    position: absolute;
+}
+.line2{
+    transform: rotate(90deg);
+}
+
+.menu1 {
+    transform: rotate(45deg);
+    animation: menu1 .1s forwards;
+}
+.menu2 {
+    transform: rotate(135deg);
+    animation: menu2 .1s forwards;
+}
+
+/* Animation */
+
+@keyframes menu1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+@keyframes menu2 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}

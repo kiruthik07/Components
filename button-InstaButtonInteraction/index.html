@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Button Interaction</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container" class="containerHide">
+        <div class="container1">
+            <a href="#">Stickers</a>
+            <img src="icons8-happy-50.png"/>
+        </div>
+        <div class="container2">
+            <a href="#">Saved replies</a>
+            <img src="icons8-typing-50.png"/>
+        </div>
+    </div>
+    <div class="button" onclick="closing()">
+        <!-- <img class="close" src="icons8-close-24.png" alt=""> -->
+        <div id="line1" class="line1"></div>
+        <div id="line2" class="line2"></div>
+    </div>
+
+    <script>
+        function closing(){
+            document.getElementById("line1").classList.toggle("menu1");
+            document.getElementById("line2").classList.toggle("line1");
+            document.getElementById("line2").classList.toggle("menu2");
+            document.getElementById("container").classList.toggle("containerHide");
+        }
+    </script>
+
+</body>
+</html>

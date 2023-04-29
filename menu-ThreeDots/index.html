@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Button Animation</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container" onclick="menu()">
+        <div id="m1" class="menu"></div>
+        <div id="m2" class="menu"></div>
+        <div id="m3" class="menu"></div>
+    </div>
+
+    <script>
+        function menu(){
+            document.getElementById("m1").classList.toggle("firstMenu");
+            document.getElementById("m2").classList.toggle("secondMenu");
+            document.getElementById("m3").classList.toggle("thirdMenu");
+        }
+    </script>
+</body>
+</html>

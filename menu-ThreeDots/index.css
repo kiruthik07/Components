@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(233, 233, 233);
+    display: grid;
+    place-items: center;
+}
+.container {
+    z-index: 1000;
+}
+.menu {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #45046d, #570A57,#8a0c62, #A91079, #F806CC);
+    margin: 8px;
+}
+.secondMenu {
+    display: none;
+}
+
+.firstMenu {
+    width: 55px;
+    height: 6px;
+    margin-left: 19px;
+    border-radius: 5px;
+    transform-origin: left;
+    animation: expandingMenu1 1s forwards;
+}
+.thirdMenu {
+    width: 55px;
+    height: 6px;
+    border-radius: 5px;
+    margin-top: 32px;
+    margin-left: 19px;
+    transform-origin: left;
+    animation: expandingMenu2 1s forwards;
+}
+@keyframes expandingMenu1 {
+    0% {
+        width: 10px;
+        height: 10px;
+    }
+    50% {
+        width: 55px;
+        height: 6px;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+@keyframes expandingMenu2 {
+    0% {
+        width: 10px;
+        height: 10px;
+    }
+    50% {
+        width: 55px;
+        height: 6px;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}

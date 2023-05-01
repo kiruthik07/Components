@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(24, 24, 24);
+    display: grid;
+    place-items: center;
+}
+
+.outer {
+     height: 100px;
+     width: 100px;
+     background-image: linear-gradient(to right, rgb(48, 48, 240),rgb(100, 2, 100) ,red ,yellow);
+     border-radius: 50%;
+     display: grid;
+     place-items: center;
+     animation: loader 2s infinite linear;
+}
+
+.inner {
+    height: 90px;
+    width: 90px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

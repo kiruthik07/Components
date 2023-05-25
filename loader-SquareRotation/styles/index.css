@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.container div {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.square1 {
+    background-color: #b1ff4a;
+    inset: auto 0;
+    margin: auto;
+    animation: 4s spin1 infinite ease-in-out;
+}
+.square2 {
+    background-color: #984aff;
+    inset: auto 0 0 0;
+    margin: auto;
+    animation: 4s spin2 infinite ease-in-out;
+}
+@keyframes spin1 {
+    0% {
+        inset: auto 0;
+        margin: auto;
+    }
+    25% {
+        transform: rotate(90deg);
+        inset: 0 0 0 auto;
+        margin: auto;
+    }
+    50% {
+        transform: rotate(180deg);
+        inset: auto 0 0 0 ;
+        margin: auto;
+    }
+    75% {
+        transform: rotate(270deg);
+        inset: 0 auto 0 0;
+        margin: auto;
+    }
+    100% {
+        transform: rotate(360deg);
+        inset: auto 0;
+        margin: auto;
+    }
+}
+@keyframes spin2 {
+    0% {
+        inset: auto 0 0 0;
+        margin: auto;
+    }
+    25% {
+        transform: rotate(90deg);
+        inset: 0 auto 0 0;
+        margin: auto;
+    }
+    50% {
+        transform: rotate(180deg);
+        inset: 0 0 auto 0;
+        margin: auto;
+    }
+    75% {
+        transform: rotate(270deg);
+        inset: 0 0 0 auto;
+        margin: auto;
+    }
+    100% {
+        transform: rotate(360deg);
+        inset: auto 0 0 0;
+        margin: auto;
+    }
+}

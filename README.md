@@ -1,3 +1,3 @@
 # Components
-I upload components like Buttons, Navbar, Menu Buttons, Card etc.
-You can use this is in your projects or portfolio.
+UI Components
+This repository contains a collection of UI components that can be used in web development projects or portfolios. The components provided here include Buttons, Navbar, Menu Buttons, and Card.

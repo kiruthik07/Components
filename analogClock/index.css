@@ -1,0 +1,36 @@
+body {
+    background: rgb(12, 12, 12);
+}
+  
+.container {
+    position: relative;
+    height: 210px;
+    width: 210px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#Hour, #Minutes, #Seconds {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+}
+
+#Hour {
+    margin-top: 45px;
+    height: 60px;
+    width: 7px;
+    background-color: aqua;
+}
+#Minutes {
+    margin-top: 25px;
+    height: 80px;
+    width: 4px;
+    background-color: rgb(255, 0, 191);
+}
+#Seconds {
+    margin-top: 5px;
+    height: 100px;
+    width: 1px;
+    background-color: rgb(0, 255, 0);
+}
